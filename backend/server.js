@@ -1,12 +1,12 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
 const bcrypt = require("bcryptjs");
+const cors = require("cors");
+const mongoose = require("mongoose");
 
-const app = express();
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 const PORT = 8080;
+const app = express();
 
 const mongoURL =
     "mongodb+srv://aniketan:aniketan01@cluster0.2jdnr.mongodb.net/user";
