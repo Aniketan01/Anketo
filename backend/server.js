@@ -6,7 +6,7 @@ const bcrypt = require("bcryptjs");
 const app = express();
 app.use(cors());
 app.use(express.json());
-const PORT = 5000;
+const PORT = 8080;
 
 const mongoURL =
     "mongodb+srv://aniketan:aniketan01@cluster0.2jdnr.mongodb.net/user";
@@ -55,4 +55,4 @@ app.post("/login", async (req, res) => {
     }
 });
 
-app.listen(PORT, () => console.log("Server running on port 5000"));
+app.listen(PORT, () => console.log("Server running on port 8080"));
