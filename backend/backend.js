@@ -3,10 +3,11 @@ const bcrypt = require("bcryptjs");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
-app.use(express.json());
-app.use(cors());
+
 const PORT = 8080;
 const app = express();
+app.use(express.json());
+app.use(cors());
 
 const mongoURL =
     "mongodb+srv://aniketan:aniketan01@cluster0.2jdnr.mongodb.net/user";
